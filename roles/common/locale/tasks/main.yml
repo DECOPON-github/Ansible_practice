@@ -1,7 +1,7 @@
 ---
 ## (1)タイムゾーンの設定
 - name: main /  Setup locale
-  timezon:
+  timezone:
     name: "{{ locale_timezone }}"
 
 ## (2)システムロケールの設定
