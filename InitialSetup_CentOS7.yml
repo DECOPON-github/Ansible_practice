@@ -28,7 +28,7 @@
     - name: Waiting for server to come back
       local_action:
         module: wait_for
-        hosts: "{{ ansible_host }}"
+        host: "{{ ansible_host }}"
         port: 22
         state: started
         delay: 30
