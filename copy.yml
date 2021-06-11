@@ -3,5 +3,5 @@
   tasks:
     - name: srcにコピー元を指定
       copy:
-        src: roles\common\users\templates\admin_sudoers.j2
+        src: roles/common/users/templates/admin_sudoers.j2
         dest: /tmp/
