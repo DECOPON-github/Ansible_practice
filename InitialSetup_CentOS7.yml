@@ -2,12 +2,14 @@
 - name: Initialize OS setting for CentOS7 Servers
   hosts: all
   roles:
-    - name: common/locale    ## (1)ロケール管理
-      tags: locale
-    - name: common/packages  ## (2)パッケージ管理
-      tags: packages
+##    - name: common/locale    ## (1)ロケール管理
+##      tags: locale
+##    - name: common/packages  ## (2)パッケージ管理
+##      tags: packages
+
     - role: common/users
       tags: users
+
 ##    - name: common/networks
 ##      tags: net
 ##    - name: common/resolver
