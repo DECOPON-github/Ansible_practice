@@ -24,12 +24,12 @@
 ##  with_dict: "{{ user_newusers }}"
 
 ## (4)システム権限の付与
-- name: main / Deploy temporary sudoers files
-  template:
-    src: ../templates/member_sudoers.j2
-    dest: "/etc/sudoers.d/{{ item.key }}"
-    owner: root
-    group: root
-    mode: 0400
-    validate: 'visude -c -f %s'
-  with_dict:  "{{ user_newusers }}"
+##- name: main / Deploy temporary sudoers files
+##  template:
+##    src: "{{ item.value.priv }}_sudoers.j2"
+##    dest: "/etc/sudoers.d/{{ item.key }}"
+##    owner: root
+##    group: root
+##    mode: 0400
+##    validate: 'visude -c -f %s'
+##  with_dict:  "{{ user_newusers }}"
