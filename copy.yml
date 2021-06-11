@@ -1,3 +1,4 @@
+---
 - name: srcにコピー元を指定
   copy:
     src: /tmp/test
