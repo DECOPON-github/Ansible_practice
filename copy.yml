@@ -3,5 +3,5 @@
   tasks:
     - name: srcにコピー元を指定
       copy:
-        src: /tmp/test
+        src: test
         dest: /tmp/test
