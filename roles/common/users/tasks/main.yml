@@ -26,7 +26,7 @@
 ## (4)システム権限の付与
 - name: main / Deploy temporary sudoers files
   template:
-    src: "roles/common/users/templates/{{ item.value.priv }}_sudoers.j2"
+    src: roles/common/users/templates/{{ item.value.priv }}_sudoers.j2
     dest: "/etc/sudoers.d/{{ item.key }}"
     owner: root
     group: root
