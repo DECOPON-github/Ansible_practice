@@ -1,7 +1,7 @@
 ---
 - hosts: all
   tasks:
-    name: srcにコピー元を指定
-    copy:
-      src: /tmp/test
-      dest: /tmp/test
+    - name: srcにコピー元を指定
+      copy:
+        src: /tmp/test
+        dest: /tmp/test
