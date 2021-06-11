@@ -6,8 +6,8 @@
       tags: locale
     - name: common/packages  ## (2)パッケージ管理
       tags: packages
-##    - role: common/users
-##      tags: users
+    - role: common/users
+      tags: users
 ##    - name: common/networks
 ##      tags: net
 ##    - name: common/resolver
